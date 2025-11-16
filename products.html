@@ -65,7 +65,7 @@
         <a href="#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
         <a href="#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
         <a href="#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
-        <a href="#pricing" class="hover:text-[#f2f4f7] transition-colors">Pricing</a>
+      <a href="products.html" class="block py-2">Products</a>
         <a href="#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
       </nav>
 
@@ -117,382 +117,147 @@
       <a href="#hero" class="block py-2">Home</a>
       <a href="#features" class="block py-2">Features</a>
       <a href="#what-yuzo" class="block py-2">How it works</a>
-      <a href="#pricing" class="block py-2">Pricing</a>
+      <a href="products.html" class="block py-2">Products</a>
       <a href="#contact" class="block py-2">Contact</a>
     </div>
   </header>
 
-  <main class="pt-20 md:pt-24">
-
-    <!-- HERO -->
-    <section
-      id="hero"
-      class="relative flex min-h-[75vh] items-center justify-center px-4 sm:px-6"
-    >
-      <div class="relative z-10 mx-auto max-w-2xl text-center reveal">
-        <h1 class="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-          Your Store for Discord Bots,
-          <span class="block text-[#7d93b5]">Management &amp; Subscriptions</span>
-        </h1>
-        <p class="mt-4 text-sm text-[#7d93b5] md:text-base">
-          Yuzo Store gives your server the bots it needs. Buy, manage, and customize bots that
-          organize your server and increase engagement—with simple monthly plans.
-        </p>
-        <div class="mt-8 flex justify-center">
-          <a
-            href="#features"
-            class="inline-flex items-center rounded-full bg-[#1b457d] px-6 py-2.5 text-sm font-medium text-[#f2f4f7] transition hover:bg-[#1c477f]"
-          >
-            Get Started
-          </a>
-        </div>
+<main class="pt-20 md:pt-24 px-4 sm:px-6">
+  <section class="mx-auto max-w-6xl py-16">
+    
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-semibold">Available Discord Bots</h1>
+      <p class="mt-3 text-sm text-[#7d93b5]">
+        Choose the bots you need and activate them instantly after payment.
+      </p>
+    </div>
+    
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Bot: System -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">System Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Tools & automation for server management.</p>
+        <div class="mt-5 text-xl font-semibold">15 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-    <!-- DASHBOARD GLOW + CARD SECTION -->
-    <section
-      class="relative -top-[6vh] h-[32vh] px-4 sm:px-6 flex items-center justify-center md:-top-[10vh] md:h-[32vh]"
-    >
-      <div class="relative w-full max-w-3xl">
-        <!-- كورة الإضاءة الكبيرة -->
-        <div
-          class="pointer-events-none absolute left-1/2 -top-36 h-[480px] w-[480px] -translate-x-1/2 rounded-full bg-[#1b457d]/40 blur-3xl"
-        ></div>
-
-        <!-- كارد الداشبورد: صورة فقط -->
-        <div
-          class="relative z-10 overflow-hidden rounded-2xl border border-[#071122] bg-[#050609]/95 shadow-xl reveal"
-        >
-          <div
-            class="h-44 w-full rounded-2xl bg-[#071122] md:h-56 flex items-center justify-center text-xs text-[#7d93b5]"
-          >
-            <!-- هنا تحط صورة الداشبورد الحقيقية -->
-            Dashboard preview image
-          </div>
-        </div>
+      
+      <!-- Bot: Games -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Games Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Fun games to boost server engagement.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-    <!-- Section 1: Features cards -->
-    <section id="features" class="relative px-4 sm:px-6 pt-6 pb-16 md:pt-10">
-      <div class="mx-auto flex max-w-5xl flex-col items-center text-center">
-        <h2 class="text-2xl font-semibold tracking-tight reveal">
-          Features that keep your server under control
-        </h2>
-        <p class="mt-3 max-w-xl text-sm text-[#7d93b5] reveal">
-          Start fast, stay organized, and keep everything manageable with a simple set of tools.
-        </p>
-
-        <div
-          class="mt-8 grid w-full gap-5 sm:gap-6 md:grid-cols-3 reveal"
-        >
-          <!-- Card 1 -->
-          <div
-            class="card-feature relative flex flex-col items-center justify-center rounded-xl border border-[#071122] bg-[#050609] px-6 py-7 text-center"
-          >
-            <!-- Inner glow -->
-            <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/40 blur-3xl"></div>
-
-            <!-- Icon circle -->
-            <div class="relative mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#1b457d]">
-              <span class="text-sm font-semibold text-white">⚡</span>
-            </div>
-
-            <h3 class="relative text-sm font-semibold md:text-base">
-              Fast Setup
-            </h3>
-            <p class="relative mt-2 text-xs text-[#7d93b5] md:text-sm">
-              Start your bot in minutes.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="card-feature relative flex flex-col items-center justify-center rounded-xl border border-[#071122] bg-[#050609] px-6 py-7 text-center"
-          >
-            <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1c477f]/40 blur-3xl"></div>
-
-            <div class="relative mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#1c477f]">
-              <span class="text-sm font-semibold text-white">🛠️</span>
-            </div>
-
-            <h3 class="relative text-sm font-semibold md:text-base">
-              Smart Tools
-            </h3>
-            <p class="relative mt-2 text-xs text-[#7d93b5] md:text-sm">
-              Features that keep your server organized.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="card-feature relative flex flex-col items-center justify-center rounded-xl border border-[#071122] bg-[#050609] px-6 py-7 text-center"
-          >
-            <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#7d93b5]/40 blur-3xl"></div>
-
-            <div class="relative mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#7d93b5]">
-              <span class="text-sm font-semibold text-white">📊</span>
-            </div>
-
-            <h3 class="relative text-sm font-semibold md:text-base">
-              Clean Dashboard
-            </h3>
-            <p class="relative mt-2 text-xs text-[#7d93b5] md:text-sm">
-              Manage everything easily.
-            </p>
-          </div>
-        </div>
+      
+      <!-- Bot: Bank -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Bank Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Economy, coins, daily rewards & systems.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-    <!-- Section 2: What Yuzo Store brings (3 rows) -->
-    <section id="what-yuzo" class="relative px-4 sm:px-6 py-16">
-      <div class="mx-auto max-w-5xl">
-        <div class="mb-10 text-center reveal">
-          <h2 class="text-2xl font-semibold tracking-tight">
-            What Yuzo Store Brings to Your Server
-          </h2>
-          <p class="mt-3 text-sm text-[#7d93b5]">
-            Three key pillars that keep your bot stack stable and your community active.
-          </p>
-        </div>
-
-        <div class="space-y-14 md:space-y-16">
-          <!-- Row 1 -->
-          <div class="flex flex-col items-center gap-6 md:gap-8 md:flex-row reveal">
-            <!-- Image/right on desktop -->
-            <div class="relative order-2 w-full md:order-1 md:w-1/2">
-              <div class="pointer-events-none absolute -top-12 -left-8 h-40 w-40 rounded-full bg-[#1b457d]/35 blur-3xl"></div>
-              <div class="relative h-44 rounded-2xl border border-[#071122] bg-[#050609] sm:h-52">
-                <div class="flex h-full items-center justify-center text-xs text-[#7d93b5] px-2 text-center">
-                  Server organization preview
-                </div>
-              </div>
-            </div>
-
-            <div class="order-1 w-full md:order-2 md:w-1/2">
-              <h3 class="text-lg font-semibold">Keep Your Server Organized</h3>
-              <p class="mt-3 text-sm text-[#7d93b5]">
-                Managing a Discord server gets messy fast. Yuzo Store gives you bots designed to
-                organize channels, automate tasks, and keep everything running clean and structured.
-              </p>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="flex flex-col items-center gap-6 md:gap-8 md:flex-row reveal">
-            <!-- Text first on desktop -->
-            <div class="w-full md:w-1/2">
-              <h3 class="text-lg font-semibold">Boost Engagement With Smart Bots</h3>
-              <p class="mt-3 text-sm text-[#7d93b5]">
-                Make your community more active with powerful interaction bots. From XP systems to
-                reaction features, Yuzo Store helps your members stay engaged naturally.
-              </p>
-            </div>
-
-            <!-- Image left on desktop -->
-            <div class="relative w-full md:w-1/2">
-              <div class="pointer-events-none absolute -top-12 -left-8 h-40 w-40 rounded-full bg-[#1c477f]/35 blur-3xl"></div>
-              <div class="relative h-44 rounded-2xl border border-[#071122] bg-[#050609] sm:h-52">
-                <div class="flex h-full items-center justify-center text-xs text-[#7d93b5] px-2 text-center">
-                  Engagement &amp; activity preview
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="flex flex-col items-center gap-6 md:gap-8 md:flex-row reveal">
-            <!-- Image right again -->
-            <div class="relative order-2 w-full md:order-1 md:w-1/2">
-              <div class="pointer-events-none absolute -top-12 -left-8 h-40 w-40 rounded-full bg-[#7d93b5]/35 blur-3xl"></div>
-              <div class="relative h-44 rounded-2xl border border-[#071122] bg-[#050609] sm:h-52">
-                <div class="flex h-full items-center justify-center text-xs text-[#7d93b5] px-2 text-center">
-                  Plans &amp; subscriptions preview
-                </div>
-              </div>
-            </div>
-
-            <div class="order-1 w-full md:order-2 md:w-1/2">
-              <h3 class="text-lg font-semibold">Simple Monthly Plans for Every Server</h3>
-              <p class="mt-3 text-sm text-[#7d93b5]">
-                No complicated setups—just choose a bot, pick a plan, and you're ready.
-                Yuzo Store handles subscriptions, usage limits, and updates so you don’t have to.
-              </p>
-            </div>
-          </div>
-        </div>
+      
+      <!-- Bot: Tickets -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Ticket Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Support tickets with advanced controls.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section id="pricing" class="relative px-4 sm:px-6 py-20">
-      <div class="mx-auto max-w-3xl">
-        
-        <h2 class="text-3xl font-semibold tracking-tight reveal text-center">
-          Frequently Asked Questions
-        </h2>
-        <p class="mt-3 text-sm text-[#7d93b5] text-center reveal">
-          Answers to common questions about Yuzo Store, bots, and subscriptions.
-        </p>
-
-        <div class="mt-10 reveal">
-          <!-- Q1 بدون خط علوي -->
-          <details class="group">
-            <summary
-              class="flex cursor-pointer items-center gap-3 px-1 py-4 text-sm font-medium text-[#f2f4f7]"
-            >
-              <span
-                class="text-xs text-[#7d93b5] transform transition-transform group-open:-rotate-90"
-              >
-                ▾
-              </span>
-              <span>What is Yuzo Store?</span>
-            </summary>
-            <div class="px-7 pb-4 text-sm text-[#7d93b5]">
-              Yuzo Store is a place to discover, manage, and subscribe to Discord bots
-              that help you organize your server, automate tasks, and boost engagement.
-            </div>
-            <div class="h-px bg-[#1b457d]/40 mt-1"></div>
-          </details>
-
-          <!-- Q2 -->
-          <details class="group">
-            <summary
-              class="flex cursor-pointer items-center gap-3 px-1 py-4 text-sm font-medium text-[#f2f4f7]"
-            >
-              <span
-                class="text-xs text-[#7d93b5] transform transition-transform group-open:-rotate-90"
-              >
-                ▾
-              </span>
-              <span>Do I need to know how to code to use Yuzo Store?</span>
-            </summary>
-            <div class="px-7 pb-4 text-sm text-[#7d93b5]">
-              No. You choose a bot, connect it to your server, and configure it from
-              a clean dashboard. All heavy work happens behind the scenes.
-            </div>
-            <div class="h-px bg-[#1b457d]/40 mt-1"></div>
-          </details>
-
-          <!-- Q3 -->
-          <details class="group">
-            <summary
-              class="flex cursor-pointer items-center gap-3 px-1 py-4 text-sm font-medium text-[#f2f4f7]"
-            >
-              <span
-                class="text-xs text-[#7d93b5] transform transition-transform group-open:-rotate-90"
-              >
-                ▾
-              </span>
-              <span>How do subscriptions and billing work?</span>
-            </summary>
-            <div class="px-7 pb-4 text-sm text-[#7d93b5]">
-              You subscribe to bots monthly. Your active bots and plans appear in your
-              dashboard, and you can upgrade, downgrade, or cancel anytime.
-            </div>
-            <div class="h-px bg-[#1b457d]/40 mt-1"></div>
-          </details>
-
-          <!-- Q4 -->
-          <details class="group">
-            <summary
-              class="flex cursor-pointer items-center gap-3 px-1 py-4 text-sm font-medium text-[#f2f4f7]"
-            >
-              <span
-                class="text-xs text-[#7d93b5] transform transition-transform group-open:-rotate-90"
-              >
-                ▾
-              </span>
-              <span>Can I use Yuzo Store with multiple servers?</span>
-            </summary>
-            <div class="px-7 pb-4 text-sm text-[#7d93b5]">
-              Yes. Depending on the bot’s plan, you can connect it to one or multiple
-              Discord servers.
-            </div>
-            <div class="h-px bg-[#1b457d]/40 mt-1"></div>
-          </details>
-
-          <!-- Q5 -->
-          <details class="group">
-            <summary
-              class="flex cursor-pointer items-center gap-3 px-1 py-4 text-sm font-medium text-[#f2f4f7]"
-            >
-              <span
-                class="text-xs text-[#7d93b5] transform transition-transform group-open:-rotate-90"
-              >
-                ▾
-              </span>
-              <span>What happens if I cancel a subscription?</span>
-            </summary>
-            <div class="px-7 pb-4 text-sm text-[#7d93b5]">
-              Your bot keeps working until the billing cycle ends. After that,
-              paid features stop but your server data remains when possible.
-            </div>
-            <div class="h-px bg-[#1b457d]/40 mt-1"></div>
-          </details>
-
-        </div>
+      
+      <!-- Bot: Custom Roles -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Custom Roles Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Automated custom roles & reactions.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-    <!-- CONTACT SECTION (Discord only) -->
-    <section id="contact" class="relative px-4 sm:px-6 py-20">
-      <div class="mx-auto max-w-3xl">
-        
-        <h2 class="text-3xl font-semibold tracking-tight reveal text-center">
-          Need help or have questions?
-        </h2>
-        <p class="mt-3 text-sm text-[#7d93b5] text-center reveal">
-          Our team is available on Discord to assist you with bots, billing, setup, and more.
-        </p>
-
-        <div class="mt-10 reveal relative">
-          <!-- كورتين الاضاءة داخل الكارد -->
-          <div
-            class="pointer-events-none absolute top-6 right-10 h-40 w-40 rounded-full bg-[#1b457d]/20 blur-2xl"
-          ></div>
-          <div
-            class="pointer-events-none absolute bottom-6 left-10 h-40 w-40 rounded-full bg-[#1b457d]/20 blur-2xl"
-          ></div>
-
-          <!-- كارد -->
-          <div
-            class="relative rounded-2xl border border-[#071122] bg-[#050609] px-6 py-10 md:px-8 md:py-12 shadow-lg"
-          >
-            <div class="text-center space-y-5">
-              
-              <h3 class="text-lg font-semibold text-[#f2f4f7]">
-                Join our Discord Community
-              </h3>
-
-              <p class="text-sm text-[#7d93b5] max-w-md mx-auto">
-                Get real-time support, ask questions, report issues, or learn how to use
-                Yuzo Store for your Discord servers.
-              </p>
-
-              <!-- زر الديسكورد -->
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 rounded-full bg-[#1b457d] px-6 py-2.5 text-sm font-medium text-[#f2f4f7] transition hover:bg-[#1c477f]"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-4 w-4"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 0 0-5.487 0c-.163-.393-.406-.874-.617-1.249a.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.07.07 0 0 0-.032.027C2.02 9.046 1.148 13.58 1.623 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.027c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.15 13.15 0 0 1-1.872-.892.077.077 0 0 1-.008-.127 10.3 10.3 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.122.1.247.198.374.292a.077.077 0 0 1-.006.127 12.5 12.5 0 0 1-1.873.891.076.076 0 0 0-.04.107c.36.698.771 1.363 1.225 1.993a.076.076 0 0 0 .084.028 19.876 19.876 0 0 0 6.002-3.03.076.076 0 0 0 .031-.055c.5-5.177-.838-9.673-3.549-13.661a.061.061 0 0 0-.03-.029z"
-                  />
-                </svg>
-                Join Discord
-              </a>
-
-            </div>
-          </div>
-        </div>
-
+      
+      <!-- Bot: XP System -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">XP System Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">XP, text leveling, voice XP, ranks.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
       </div>
-    </section>
-
-  </main>
+      
+      <!-- Bot: Events -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Events Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Host events, giveaways & activities.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Feelings & Zajel -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Feeling & Zajel Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Fun interactions: feelings, messages & more.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Avatars -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Avatars Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Random avatars, themes & profiles.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Temporary Rooms -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Temporary Rooms Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Auto voice channels created on join.</p>
+        <div class="mt-5 text-xl font-semibold">12 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Streak -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Streak Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Daily streak & activity tracking.</p>
+        <div class="mt-5 text-xl font-semibold">5 ريال</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+    </div>
+  </section>
+</main>
 
   <!-- Footer -->
   <footer class="border-t border-[#071122] bg-black px-4 sm:px-6 pb-6 pt-10">
@@ -603,3 +368,5 @@
   </script>
 </body>
 </html>
+products.html
+16 KB
