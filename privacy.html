@@ -2,13 +2,12 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <title>Yuzo Store - Landing</title>
+  <title>Yuzo Store - Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    /* Scroll reveal basic animation */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -19,7 +18,6 @@
       transform: translateY(0);
     }
 
-    /* Feature card top border hover animation */
     .card-feature {
       position: relative;
       overflow: hidden;
@@ -49,7 +47,6 @@
     <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
       <!-- Left: Logo -->
       <div class="flex items-center gap-3">
-        <!-- TODO: ضع شعارك هنا -->
         <img
           src="Logo.png"
           alt="Yuzo Store logo"
@@ -62,16 +59,15 @@
 
       <!-- Center: Nav -->
       <nav class="hidden items-center gap-6 text-sm text-[#f2f4f7]/80 md:flex">
-        <a href="#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
-        <a href="#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
-        <a href="#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
-      <a href="products.html" class="block py-2">Products</a>
-        <a href="#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
+        <a href="index.html#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
+        <a href="index.html#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
+        <a href="index.html#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
+        <a href="pricing.html" class="block py-2 hover:text-[#f2f4f7]">Pricing</a>
+        <a href="index.html#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
       </nav>
 
       <!-- Right: Avatar / Dropdown -->
       <div class="relative flex items-center gap-2">
-        <!-- Desktop avatar -->
         <button
           id="userAvatarBtn"
           class="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-black/60 text-sm font-medium md:flex"
@@ -79,7 +75,6 @@
           <span>YS</span>
         </button>
 
-        <!-- Dropdown -->
         <div
           id="userDropdown"
           class="absolute right-0 top-11 mt-1 w-40 rounded-lg border border-[#071122] bg-[#050608] p-1 text-sm text-[#f2f4f7]/90 shadow-lg hidden"
@@ -114,11 +109,11 @@
       id="mobileMenu"
       class="hidden border-t border-[#071122] bg-black/95 px-4 pb-4 pt-2 text-sm text-[#f2f4f7]/80 md:hidden"
     >
-      <a href="#hero" class="block py-2">Home</a>
-      <a href="#features" class="block py-2">Features</a>
-      <a href="#what-yuzo" class="block py-2">How it works</a>
-      <a href="products.html" class="block py-2">Products</a>
-      <a href="#contact" class="block py-2">Contact</a>
+      <a href="index.html#hero" class="block py-2">Home</a>
+      <a href="index.html#features" class="block py-2">Features</a>
+      <a href="index.html#what-yuzo" class="block py-2">How it works</a>
+      <a href="pricing.html" class="block py-2">Pricing</a>
+      <a href="index.html#contact" class="block py-2">Contact</a>
     </div>
   </header>
 
@@ -133,7 +128,7 @@
       </p>
     </header>
 
-    <!-- Section: Who we are -->
+    <!-- 1. Who we are -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">1. Who we are</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -147,7 +142,7 @@
       </p>
     </section>
 
-    <!-- Section: Data we collect -->
+    <!-- 2. Information we collect -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">2. Information we collect</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -161,31 +156,32 @@
       </ul>
     </section>
 
-    <!-- Section: Payments + Tap -->
+    <!-- 3. Payments and Paddle (UPDATED) -->
     <section class="space-y-3 mb-8">
-      <h2 class="text-lg font-semibold">3. Payments and Tap</h2>
+      <h2 class="text-lg font-semibold">3. Payments and Paddle</h2>
       <p class="text-sm text-[#7d93b5]">
-        We use Tap Payments (&quot;Tap&quot;) as a payment service provider to process your payments securely.
-        When you make a payment, certain payment instrument information is processed by Tap.
+        We use <span class="font-medium text-[#f2f4f7]">Paddle</span> as our reseller and Merchant of Record to process your payments securely.
+        When you make a purchase, certain billing and payment information is processed directly by Paddle in order
+        to complete the transaction, calculate taxes, and issue invoices.
       </p>
       <p class="text-sm text-[#7d93b5]">
-        Tap acts as a data controller with regards to your payment instrument information; see their privacy policy
-        for more information about the processing.
+        Paddle acts as an independent data controller for payment-related information. For more details about how
+        Paddle processes your data, please refer to their privacy documentation.
       </p>
       <p class="text-sm text-[#7d93b5]">
-        You can review Tap’s privacy policy here:<br />
+        You can find out more about Paddle here:<br />
         <a
-          href="https://www.tap.company/en-sa/privacy"
+          href="https://paddle.net"
           target="_blank"
           rel="noopener noreferrer"
           class="text-[#7d93b5] underline hover:text-[#f2f4f7]"
         >
-          Tap Payments – Privacy Policy
+          Paddle – Buyer Information
         </a>
       </p>
     </section>
 
-    <!-- Section: How we use data -->
+    <!-- 4. How we use your information -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">4. How we use your information</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -194,23 +190,23 @@
       <ul class="text-sm text-[#7d93b5] list-disc list-inside space-y-1">
         <li>Provide, operate, and maintain Yuzo Store and its dashboard.</li>
         <li>Manage your active bots, subscriptions, and server settings.</li>
-        <li>Process payments and handle subscription status with Tap.</li>
+        <li>Sync subscription status and payment information with Paddle.</li>
         <li>Communicate with you about updates, issues, or support.</li>
         <li>Improve the performance and reliability of our services.</li>
       </ul>
     </section>
 
-    <!-- Section: Data retention -->
+    <!-- 5. Data retention -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">5. Data retention</h2>
       <p class="text-sm text-[#7d93b5]">
         We retain your information for as long as necessary to provide our services, comply with legal obligations,
-        resolve disputes, and enforce our agreements. Payment records may be stored for a period required by law or
-        by our payment partners.
+        resolve disputes, and enforce our agreements. Payment and billing records may be stored for a period required
+        by law or by our payment partners such as Paddle.
       </p>
     </section>
 
-    <!-- Section: Your rights -->
+    <!-- 6. Your rights -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">6. Your rights</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -219,7 +215,7 @@
       </p>
     </section>
 
-    <!-- Section: Updates -->
+    <!-- 7. Changes -->
     <section class="space-y-3">
       <h2 class="text-lg font-semibold">7. Changes to this policy</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -227,7 +223,7 @@
         date on this page. Your continued use of Yuzo Store after any update means you accept the revised policy.
       </p>
       <p class="mt-3 text-xs text-[#7d93b5]">
-        Last updated: November 16, 2025
+        Last updated: December 7, 2025
       </p>
     </section>
   </section>
@@ -253,10 +249,10 @@
         <div>
           <h4 class="text-sm font-semibold text-[#f2f4f7]">Product</h4>
           <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
-            <li><a href="#features" class="hover:text-[#f2f4f7]">Features</a></li>
-            <li><a href="#what-yuzo" class="hover:text-[#f2f4f7]">How it works</a></li>
-            <li><a href="/pricing" class="hover:text-[#f2f4f7]">Pricing</a></li>
-            <li><a href="#hero" class="hover:text-[#f2f4f7]">My Bots</a></li>
+            <li><a href="index.html#features" class="hover:text-[#f2f4f7]">Features</a></li>
+            <li><a href="index.html#what-yuzo" class="hover:text-[#f2f4f7]">How it works</a></li>
+            <li><a href="pricing.html" class="hover:text-[#f2f4f7]">Pricing</a></li>
+            <li><a href="index.html#hero" class="hover:text-[#f2f4f7]">My Bots</a></li>
           </ul>
         </div>
 
@@ -264,9 +260,9 @@
         <div>
           <h4 class="text-sm font-semibold text-[#f2f4f7]">Support</h4>
           <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Help Center</a></li>
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Documentation</a></li>
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Contact</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Help Center</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Documentation</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -286,7 +282,6 @@
 
   <!-- Scripts: header blur, dropdown, mobile menu, scroll reveal -->
   <script>
-    // Header blur on scroll
     const header = document.getElementById('mainHeader');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 10) {
@@ -296,7 +291,6 @@
       }
     });
 
-    // Avatar dropdown
     const avatarBtn = document.getElementById('userAvatarBtn');
     const dropdown = document.getElementById('userDropdown');
 
@@ -313,7 +307,6 @@
       });
     }
 
-    // Mobile menu
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -323,7 +316,6 @@
       });
     }
 
-    // Scroll reveal
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       (entries) => {
