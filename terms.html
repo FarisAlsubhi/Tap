@@ -2,13 +2,12 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <title>Yuzo Store - Landing</title>
+  <title>Yuzo Store - Terms</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    /* Scroll reveal basic animation */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -19,7 +18,6 @@
       transform: translateY(0);
     }
 
-    /* Feature card top border hover animation */
     .card-feature {
       position: relative;
       overflow: hidden;
@@ -49,7 +47,6 @@
     <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
       <!-- Left: Logo -->
       <div class="flex items-center gap-3">
-        <!-- TODO: ضع شعارك هنا -->
         <img
           src="Logo.png"
           alt="Yuzo Store logo"
@@ -62,16 +59,15 @@
 
       <!-- Center: Nav -->
       <nav class="hidden items-center gap-6 text-sm text-[#f2f4f7]/80 md:flex">
-        <a href="#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
-        <a href="#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
-        <a href="#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
-      <a href="products.html" class="block py-2">Products</a>
-        <a href="#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
+        <a href="index.html#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
+        <a href="index.html#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
+        <a href="index.html#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
+        <a href="pricing.html" class="hover:text-[#f2f4f7] transition-colors">Pricing</a>
+        <a href="index.html#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
       </nav>
 
       <!-- Right: Avatar / Dropdown -->
       <div class="relative flex items-center gap-2">
-        <!-- Desktop avatar -->
         <button
           id="userAvatarBtn"
           class="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-black/60 text-sm font-medium md:flex"
@@ -79,7 +75,6 @@
           <span>YS</span>
         </button>
 
-        <!-- Dropdown -->
         <div
           id="userDropdown"
           class="absolute right-0 top-11 mt-1 w-40 rounded-lg border border-[#071122] bg-[#050608] p-1 text-sm text-[#f2f4f7]/90 shadow-lg hidden"
@@ -114,11 +109,11 @@
       id="mobileMenu"
       class="hidden border-t border-[#071122] bg-black/95 px-4 pb-4 pt-2 text-sm text-[#f2f4f7]/80 md:hidden"
     >
-      <a href="#hero" class="block py-2">Home</a>
-      <a href="#features" class="block py-2">Features</a>
-      <a href="#what-yuzo" class="block py-2">How it works</a>
-      <a href="products.html" class="block py-2">Products</a>
-      <a href="#contact" class="block py-2">Contact</a>
+      <a href="index.html#hero" class="block py-2">Home</a>
+      <a href="index.html#features" class="block py-2">Features</a>
+      <a href="index.html#what-yuzo" class="block py-2">How it works</a>
+      <a href="pricing.html" class="block py-2">Pricing</a>
+      <a href="index.html#contact" class="block py-2">Contact</a>
     </div>
   </header>
 
@@ -134,7 +129,7 @@
       </p>
     </header>
     
-    <!-- Section: Definitions -->
+    <!-- 1. Definitions -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">1. Definitions</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -148,7 +143,7 @@
       </ul>
     </section>
     
-    <!-- Section: Use of service -->
+    <!-- 2. Use of service -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">2. Use of Yuzo Store</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -158,7 +153,7 @@
       </p>
     </section>
     
-    <!-- Section: Accounts -->
+    <!-- 3. Accounts -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">3. Accounts and security</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -168,27 +163,30 @@
       </p>
     </section>
     
-    <!-- Section: Payments via Tap -->
+    <!-- 4. Payments and subscriptions (UPDATED TO PADDLE) -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">4. Payments and subscriptions</h2>
       <p class="text-sm text-[#7d93b5]">
-        Payments for bots, plans, or other services are processed securely via Tap Payments (&quot;Tap&quot;).
-        By subscribing or making a payment, you authorize us and Tap to process the transaction in accordance with
-        Tap’s terms and our policies.
+        Payments for bots, subscriptions, or other services are processed securely by 
+        <span class="font-medium text-[#f2f4f7]">Paddle</span>, our authorized reseller and 
+        Merchant of Record. Paddle is responsible for billing, tax calculation, invoicing,
+        and processing refunds in accordance with their Checkout Buyer Terms.
       </p>
       <p class="text-sm text-[#7d93b5]">
-        Subscription periods, renewal dates, and prices will be shown clearly at checkout or in your dashboard.
-        If a subscription is not renewed or is cancelled, access to paid features or bots may be limited or stopped
-        at the end of the current billing period.
+        Subscription periods, renewal dates, and prices will be shown clearly at checkout
+        or in your account or order information provided by Paddle. If a subscription is
+        not renewed or is cancelled, access to paid features or bots may be limited or
+        stopped at the end of the current billing period.
       </p>
     </section>
     
-    <!-- Section: Refunds link to policy -->
+    <!-- 5. Refunds -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">5. Refunds</h2>
       <p class="text-sm text-[#7d93b5]">
-        Refunds, if any, are handled according to our Refund Policy. Please review the Refund Policy page for details
-        about eligibility, timing, and conditions.
+        Refunds, if any, are handled according to our Refund &amp; Cancellation Policy and
+        processed by Paddle as our Merchant of Record. Please review the Refund Policy
+        page for details about eligibility, timing, and conditions.
       </p>
       <p class="text-sm text-[#7d93b5]">
         <a href="refund.html" class="text-[#7d93b5] underline hover:text-[#f2f4f7]">
@@ -197,7 +195,7 @@
       </p>
     </section>
     
-    <!-- Section: Service changes -->
+    <!-- 6. Service changes -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">6. Changes, downtime, and limitations</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -207,7 +205,7 @@
       </p>
     </section>
     
-    <!-- Section: Liability -->
+    <!-- 7. Liability -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">7. Limitation of liability</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -216,7 +214,7 @@
       </p>
     </section>
     
-    <!-- Section: Governing law -->
+    <!-- 8. Governing law -->
     <section class="space-y-3 mb-8">
       <h2 class="text-lg font-semibold">8. Governing law</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -225,7 +223,7 @@
       </p>
     </section>
     
-    <!-- Section: Changes to Terms -->
+    <!-- 9. Changes to Terms -->
     <section class="space-y-3">
       <h2 class="text-lg font-semibold">9. Changes to these Terms</h2>
       <p class="text-sm text-[#7d93b5]">
@@ -233,7 +231,7 @@
         &quot;Last updated&quot; date. Your continued use of Yuzo Store after any update means you accept the revised Terms.
       </p>
       <p class="mt-3 text-xs text-[#7d93b5]">
-        Last updated: November 16, 2025
+        Last updated: December 7, 2025
       </p>
     </section>
   </section>
@@ -242,42 +240,37 @@
   <!-- Footer -->
   <footer class="border-t border-[#071122] bg-black px-4 sm:px-6 pb-6 pt-10">
     <div class="mx-auto max-w-6xl">
-      <!-- Top -->
       <div class="grid gap-8 md:grid-cols-3">
-        <!-- Logo + description -->
         <div>
           <div class="mb-3 flex items-center gap-2">
-            <div class="h-7 w-7 rounded-md bg-[#071122]"></div>
-            <span class="text-base font-semibold">Yuzo store</span>
+            <img src="Logo.png" alt="Yuzo Store logo" class="h-7 w-7" />
+            <span class="text-base font-semibold">Yuzo Store</span>
           </div>
           <p class="text-sm text-[#7d93b5]">
             Power up your Discord server with managed bots and clean dashboards.
           </p>
         </div>
 
-        <!-- Product links -->
         <div>
           <h4 class="text-sm font-semibold text-[#f2f4f7]">Product</h4>
           <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
-            <li><a href="#features" class="hover:text-[#f2f4f7]">Features</a></li>
-            <li><a href="#what-yuzo" class="hover:text-[#f2f4f7]">How it works</a></li>
-            <li><a href="/pricing" class="hover:text-[#f2f4f7]">Pricing</a></li>
-            <li><a href="#hero" class="hover:text-[#f2f4f7]">My Bots</a></li>
+            <li><a href="index.html#features" class="hover:text-[#f2f4f7]">Features</a></li>
+            <li><a href="index.html#what-yuzo" class="hover:text-[#f2f4f7]">How it works</a></li>
+            <li><a href="pricing.html" class="hover:text-[#f2f4f7]">Pricing</a></li>
+            <li><a href="index.html#hero" class="hover:text-[#f2f4f7]">My Bots</a></li>
           </ul>
         </div>
 
-        <!-- Support links -->
         <div>
           <h4 class="text-sm font-semibold text-[#f2f4f7]">Support</h4>
           <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Help Center</a></li>
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Documentation</a></li>
-            <li><a href="#contact" class="hover:text-[#f2f4f7]">Contact</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Help Center</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Documentation</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#f2f4f7]">Contact</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- Bottom bar -->
       <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-[#071122] pt-4 text-xs text-[#7d93b5] md:flex-row">
         <div>
           © 2025 Yuzo Store. All rights reserved.
@@ -290,9 +283,7 @@
     </div>
   </footer>
 
-  <!-- Scripts: header blur, dropdown, mobile menu, scroll reveal -->
   <script>
-    // Header blur on scroll
     const header = document.getElementById('mainHeader');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 10) {
@@ -302,7 +293,6 @@
       }
     });
 
-    // Avatar dropdown
     const avatarBtn = document.getElementById('userAvatarBtn');
     const dropdown = document.getElementById('userDropdown');
 
@@ -319,7 +309,6 @@
       });
     }
 
-    // Mobile menu
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -329,7 +318,6 @@
       });
     }
 
-    // Scroll reveal
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       (entries) => {
