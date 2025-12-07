@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yuzo Store - Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Scroll reveal basic animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Feature card top border hover animation */
+    .card-feature {
+      position: relative;
+      overflow: hidden;
+    }
+    .card-feature::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(to right, #1b457d, #7d93b5);
+      transition: width 0.35s ease;
+    }
+    .card-feature:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-black text-[#f2f4f7] antialiased">
+
+  <!-- Header -->
+  <header
+    id="mainHeader"
+    class="fixed inset-x-0 top-0 z-30 border-b border-transparent bg-black/80 backdrop-blur-sm transition-all duration-300"
+  >
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
+      <!-- Left: Logo -->
+      <div class="flex items-center gap-3">
+        <!-- TODO: ضع شعارك هنا -->
+        <img
+          src="logo-placeholder.png"
+          alt="Yuzo store logo"
+          class="h-8 w-8 rounded-md object-contain"
+        />
+        <span class="text-lg font-semibold tracking-tight cursor-pointer" onclick="window.location.href='index.html'">
+          Yuzo <span class="text-[#7d93b5]">store</span>
+        </span>
+      </div>
+
+      <!-- Center: Nav -->
+      <nav class="hidden items-center gap-6 text-sm text-[#f2f4f7]/80 md:flex">
+        <a href="#hero" class="hover:text-[#f2f4f7] transition-colors">Home</a>
+        <a href="#features" class="hover:text-[#f2f4f7] transition-colors">Features</a>
+        <a href="#what-yuzo" class="hover:text-[#f2f4f7] transition-colors">How it works</a>
+      <a href="products.html" class="block py-2">Products</a>
+        <a href="#contact" class="hover:text-[#f2f4f7] transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right: Avatar / Dropdown -->
+      <div class="relative flex items-center gap-2">
+        <!-- Desktop avatar -->
+        <button
+          id="userAvatarBtn"
+          class="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-black/60 text-sm font-medium md:flex"
+        >
+          <span>YS</span>
+        </button>
+
+        <!-- Dropdown -->
+        <div
+          id="userDropdown"
+          class="absolute right-0 top-11 mt-1 w-40 rounded-lg border border-[#071122] bg-[#050608] p-1 text-sm text-[#f2f4f7]/90 shadow-lg hidden"
+        >
+          <button class="flex w-full items-center rounded-md px-3 py-2 text-left hover:bg-white/5">
+            My Bots
+          </button>
+          <button class="flex w-full items-center rounded-md px-3 py-2 text-left hover:bg-white/5">
+            Dashboard
+          </button>
+          <button class="flex w-full items-center rounded-md px-3 py-2 text-left text-red-400 hover:bg-white/5">
+            Logout
+          </button>
+        </div>
+
+        <!-- Mobile menu toggle -->
+        <button
+          id="mobileMenuBtn"
+          class="flex h-9 w-9 items-center justify-center rounded-md border border-white/20 bg-black/60 text-sm md:hidden"
+        >
+          <span class="sr-only">Open menu</span>
+          <div class="space-y-1.5">
+            <span class="block h-0.5 w-4 bg-white"></span>
+            <span class="block h-0.5 w-4 bg-white"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div
+      id="mobileMenu"
+      class="hidden border-t border-[#071122] bg-black/95 px-4 pb-4 pt-2 text-sm text-[#f2f4f7]/80 md:hidden"
+    >
+      <a href="#hero" class="block py-2">Home</a>
+      <a href="#features" class="block py-2">Features</a>
+      <a href="#what-yuzo" class="block py-2">How it works</a>
+      <a href="products.html" class="block py-2">Products</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+<main class="pt-20 md:pt-24 px-4 sm:px-6">
+  <section class="mx-auto max-w-6xl py-16">
+    
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-semibold">Available Discord Bots</h1>
+      <p class="mt-3 text-sm text-[#7d93b5]">
+        Choose the bots you need and activate them instantly after payment.
+      </p>
+    </div>
+    
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Bot: System -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">System Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Tools & automation for server management.</p>
+        <div class="mt-5 text-xl font-semibold">4$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Games -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Games Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Fun games to boost server engagement.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Bank -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Bank Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Economy, coins, daily rewards & systems.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Tickets -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Ticket Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Support tickets with advanced controls.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Custom Roles -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Custom Roles Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Automated custom roles & reactions.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: XP System -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">XP System Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">XP, text leveling, voice XP, ranks.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Events -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Events Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Host events, giveaways & activities.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Feelings & Zajel -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Feeling & Zajel Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Fun interactions: feelings, messages & more.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Avatars -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Avatars Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Random avatars, themes & profiles.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Temporary Rooms -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Temporary Rooms Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Auto voice channels created on join.</p>
+        <div class="mt-5 text-xl font-semibold">3.20$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+      <!-- Bot: Streak -->
+      <div class="relative rounded-2xl border border-[#071122] bg-[#050609] p-6 card-feature">
+        <div class="pointer-events-none absolute -top-10 -left-10 h-24 w-24 rounded-full bg-[#1b457d]/30 blur-3xl"></div>
+        <h3 class="text-lg font-semibold">Streak Bot</h3>
+        <p class="text-sm text-[#7d93b5] mt-2">Daily streak & activity tracking.</p>
+        <div class="mt-5 text-xl font-semibold">1.33$</div>
+        <a href="#" class="mt-6 block text-center bg-[#1b457d] hover:bg-[#1c477f] py-2 rounded-full text-sm text-[#f2f4f7]">
+          Subscribe
+        </a>
+      </div>
+      
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#071122] bg-black px-4 sm:px-6 pb-6 pt-10">
+    <div class="mx-auto max-w-6xl">
+      <!-- Top -->
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Logo + description -->
+        <div>
+          <div class="mb-3 flex items-center gap-2">
+            <div class="h-7 w-7 rounded-md bg-[#071122]"></div>
+            <span class="text-base font-semibold">Yuzo store</span>
+          </div>
+          <p class="text-sm text-[#7d93b5]">
+            Power up your Discord server with managed bots and clean dashboards.
+          </p>
+        </div>
+
+        <!-- Product links -->
+        <div>
+          <h4 class="text-sm font-semibold text-[#f2f4f7]">Product</h4>
+          <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
+            <li><a href="#features" class="hover:text-[#f2f4f7]">Features</a></li>
+            <li><a href="#what-yuzo" class="hover:text-[#f2f4f7]">How it works</a></li>
+            <li><a href="/pricing" class="hover:text-[#f2f4f7]">Pricing</a></li>
+            <li><a href="#hero" class="hover:text-[#f2f4f7]">My Bots</a></li>
+          </ul>
+        </div>
+
+        <!-- Support links -->
+        <div>
+          <h4 class="text-sm font-semibold text-[#f2f4f7]">Support</h4>
+          <ul class="mt-3 space-y-2 text-sm text-[#7d93b5]">
+            <li><a href="#contact" class="hover:text-[#f2f4f7]">Help Center</a></li>
+            <li><a href="#contact" class="hover:text-[#f2f4f7]">Documentation</a></li>
+            <li><a href="#contact" class="hover:text-[#f2f4f7]">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-[#071122] pt-4 text-xs text-[#7d93b5] md:flex-row">
+        <div>
+          © 2025 Yuzo Store. All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="terms.html" class="hover:text-[#f2f4f7]">Terms</a>
+          <a href="privacy.html" class="hover:text-[#f2f4f7]">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: header blur, dropdown, mobile menu, scroll reveal -->
+  <script>
+    // Header blur on scroll
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.classList.add('backdrop-blur-md', 'bg-black/85', 'border-b', 'border-[#071122]');
+      } else {
+        header.classList.remove('backdrop-blur-md', 'bg-black/85', 'border-b', 'border-[#071122]');
+      }
+    });
+
+    // Avatar dropdown
+    const avatarBtn = document.getElementById('userAvatarBtn');
+    const dropdown = document.getElementById('userDropdown');
+
+    if (avatarBtn && dropdown) {
+      avatarBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', () => {
+        if (!dropdown.classList.contains('hidden')) {
+          dropdown.classList.add('hidden');
+        }
+      });
+    }
+
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
+products.html
+16 KB
